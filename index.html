@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Welcome to website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="login-card">
+        <!-- Left gradient welcome area -->
+        <div class="welcome-panel">
+          <div class="welcome-content">
+            <h1>Welcome to website</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="welcome-shapes">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <!-- Right login form area -->
+        <div class="form-panel">
+          <h2 class="form-title">User Login</h2>
+
+          <form id="login-form" autocomplete="off">
+            <div class="input-group">
+              <span class="input-icon" aria-hidden="true">👤</span>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email address"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <span class="input-icon" aria-hidden="true">🔒</span>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                required
+                minlength="4"
+              />
+            </div>
+
+            <div class="form-row">
+              <label class="checkbox">
+                <input type="checkbox" id="remember" />
+                <span class="checkmark"></span>
+                <span>Remember</span>
+              </label>
+
+              <button type="button" class="link-btn">Forgot password?</button>
+            </div>
+
+            <button type="submit" class="btn-login">Login</button>
+
+            <p class="helper-text" id="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
